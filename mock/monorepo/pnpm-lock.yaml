@@ -1,0 +1,33 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
+  packages/hello:
+    dependencies:
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
+  packages/isolated-island:
+    dependencies:
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
+packages:
+
+  /typescript@5.4.5:
+    resolution: {integrity: sha1-QszvLFcf29D2cYsdH15uXvAG9hE=, tarball: http://r.npm.sankuai.com/typescript/download/typescript-5.4.5.tgz}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
