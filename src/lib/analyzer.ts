@@ -35,7 +35,7 @@ export class WireitAnalyzer implements Analyzer {
   async analyze(task: WireitTask): Promise<AnalyzerResult> {
     const file: WireitPackage = await this.#reader.read(task.packageDir);
 
-    const taskConfig = file.wireit[task.name];
+    const taskConfig = file.wireit?.[task.name];
 
     let taskDeps: WireitDependency[] = [];
     let taskFiles: AnalyzedFile[] = [];
